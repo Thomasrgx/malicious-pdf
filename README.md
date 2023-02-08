@@ -29,3 +29,15 @@ Output will be written as: test1.pdf, test2.pdf, test3.pdf etc in the current di
 - [Adobe Reader - PDF callback via XSLT stylesheet in XFA](https://insert-script.blogspot.com/2019/01/adobe-reader-pdf-callback-via-xslt.html)
 - [Foxit PDF Reader PoC, DoHyun Lee](https://twitter.com/l33d0hyun/status/1448342241647366152)
 - [Eicar test file by Stas Yakobov](https://github.com/fire1ce/eicar-standard-antivirus-test-files)
+
+1. git clone https://lnkd.in/g7nfz-nd
+
+2. Copy Burp Collaborator URL to the clipboard.
+
+3. python3 malicious-pdf.py burp-collaborator-url
+
+4. Test file upload features with the generated PDFs.
+
+5. PRO tip: On some endpoints, you need to provide base64 data.
+
+You can use the search engine to find a PDF => Base64 converter. Use the base64 value in the input, usually via a POST request parameter.
